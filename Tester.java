@@ -24,6 +24,7 @@ public class Tester {
 
                 if (guess == 0) {
                     System.out.println("You ended the game.");
+                    System.exit(0); // We got this code from https://iq.opengenus.org/terminate-program-in-java/#:~:text=Different%20ways%20to%20terminate%20program%20in%20Java%20are%3A,Halting%20the%20JVM%20itself%20using%20the%20Halt%20Method
                 } else if (!(guess <= highEnd && guess >= lowEnd)) {
                     System.out.println("Please enter a guess within the range.");
                     guess = scanner1.nextInt();
