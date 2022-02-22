@@ -29,7 +29,7 @@ public class Tester {
                     System.out.println("Please enter a guess within the range.");
                     guess = scanner1.nextInt();
                 }
-
+                
             }
 
         }
