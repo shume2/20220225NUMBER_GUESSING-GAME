@@ -33,6 +33,39 @@ public class Tester {
                     System.out.println("Please enter a guess within the range.");
                     guess = scanner1.nextInt();
                 }
+                else if (numberOfDigits == 1) {
+                    if ((TARGET-guess) > 4){
+                        System.out.println("Cold, and low. try again.");
+                        guess = scanner1.nextInt();
+                        numberOfGuesses = numberOfGuesses + 1;
+                    }
+                    else if ((TARGET - guess) < -4){
+                        System.out.println("Cold, and high. Try again.");
+                        guess = scanner1.nextInt();
+                        numberOfGuesses = numberOfGuesses + 1;
+                    }
+                    else if ((TARGET - guess) > 2){
+                        System.out.println("Warm, but low. Try again.");
+                        guess = scanner1.nextInt();
+                        numberOfGuesses = numberOfGuesses + 1;
+                    }
+                    else if ((TARGET - guess) < -2){
+                        System.out.println("Warm, but high. Try again.");
+                        guess = scanner1.nextInt();
+                        numberOfGuesses = numberOfGuesses + 1;
+                    }
+                    else if ((TARGET - guess) > 0){
+                        System.out.println("Red hot, but low. Try again.");
+                        guess = scanner1.nextInt();
+                        numberOfGuesses = numberOfGuesses + 1;
+                    }
+                     else{
+                         System.out.println("Red hot, but high. Try again.");
+                         guess = scanner1.nextInt();
+                         numberOfGuesses = numberOfGuesses + 1;
+                    }
+
+                }
                 else if (guess < .5 * TARGET) {
                     System.out.println("Ice cold, and very low. Try again.");
                     guess = scanner1.nextInt();
